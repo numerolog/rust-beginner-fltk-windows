@@ -1,0 +1,18 @@
+[package]
+name = "fltk_test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+fltk = "^1.5"
+
+[profile.release]
+opt-level = 'z'     # Optimize for size
+lto = true          # Enable link-time optimization
+codegen-units = 1   # Reduce number of codegen units to increase optimizations
+panic = 'abort'     # Abort on panic
+strip = 'symbols'        # Strip symbols from binary*
+
+#[target.x86_64-pc-windows-gnu]
+
+
