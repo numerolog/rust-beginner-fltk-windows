@@ -6,4 +6,4 @@ build for X and mustdie(approx.):
     sudo dnf install mingw64-gcc
     cargo build --target x86_64-pc-windows-gnu --release
 
-![](img.png)
+![](img1.png)
