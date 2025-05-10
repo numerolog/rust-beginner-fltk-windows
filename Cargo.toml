@@ -5,6 +5,9 @@ edition = "2024"
 
 [dependencies]
 fltk = "^1.5"
+fltk-theme = "0.7"
+#winapi = { version = "0.3.9", cfg="windows" }
+windows-registry =  { version = "0.5.1", cfg="windows" }
 
 [profile.release]
 opt-level = 'z'     # Optimize for size
